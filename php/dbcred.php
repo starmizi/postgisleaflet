@@ -1,9 +1,9 @@
 <?php
 
 $user = 'postgres';
-$password = 'postgis';
+$password = 'password';
 $host = 'localhost';
 $port = '5432';
-$dbname = 'sandwikimap';
+$dbname = 'demo';
 
 ?>

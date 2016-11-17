@@ -3,7 +3,7 @@
 
 //global variables
 var map,
-	fields = ["gid", "createdby", "featname", "feattype", "status", "acres"], 
+	fields = ["gid", "county", "featname", "feattype", "status", "acres"], 
 	autocomplete = [];
 
 $(document).ready(initialize);
@@ -16,7 +16,7 @@ function initialize(){
 		zoom: 7
 	});
 
-	var tileLayer = L.tileLayer("http://{s}.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png").addTo(map);
+	var tileLayer = L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
 
 	//next: add features to map
 	getData();

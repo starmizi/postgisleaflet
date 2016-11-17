@@ -4,9 +4,9 @@ ini_set('display_errors', 1);
 //database login info
 $host = 'localhost';
 $port = '5432';
-$dbname = 'sandwikimap2';
+$dbname = 'demo';
 $user = 'postgres';
-$password = 'postgis';
+$password = 'password';
 
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if (!$conn) {

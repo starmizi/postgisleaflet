@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 //database login info
 $host = 'localhost';
 $port = '5432';
-$dbname = 'demo';
+$dbname = 'climate';
 $user = 'postgres';
 $password = 'password';
 

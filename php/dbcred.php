@@ -4,6 +4,6 @@ $user = 'postgres';
 $password = 'password';
 $host = 'localhost';
 $port = '5432';
-$dbname = 'demo';
+$dbname = 'climate';
 
 ?>

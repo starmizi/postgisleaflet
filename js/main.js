@@ -3,7 +3,7 @@
 
 //global variables
 var map,
-	fields = ["gid", "county", "featname", "feattype", "status", "acres"], 
+	fields = ["gid", "desa"], 
 	autocomplete = [];
 
 $(document).ready(initialize);
@@ -25,7 +25,7 @@ function initialize(){
 function getData(){
 	$.ajax("php/getData.php", {
 		data: {
-			table: "fracsandsites",
+			table: "ej_village_centroid",
 			fields: fields
 		},
 		success: function(data){

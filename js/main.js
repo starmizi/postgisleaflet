@@ -12,8 +12,8 @@ function initialize(){
 	$("#map").height($(window).height());
 
 	map = L.map("map", {
-		center: L.latLng(44.7, -90),
-		zoom: 7
+		center: L.latLng(-7.8, 112.5),
+		zoom: 6
 	});
 
 	var tileLayer = L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
@@ -25,7 +25,7 @@ function initialize(){
 function getData(){
 	$.ajax("php/getData.php", {
 		data: {
-			table: "ej_village_centroid",
+			table: "ej_vill",
 			fields: fields
 		},
 		success: function(data){
@@ -92,8 +92,8 @@ function mapData(data){
 				color: "#FFF",
 				fillOpacity: 0.5,
 				opacity: 0.8,
-				weight: 1,
-				radius: 8
+				weight: 0.5,
+				radius: 1
 			};
 
 			return L.circleMarker(latlng, markerStyle);

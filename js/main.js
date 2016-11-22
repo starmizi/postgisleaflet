@@ -86,18 +86,18 @@ function mapData(data){
     });
 
 	var mapDataLayer = L.geoJson(geojson, {
-		pointToLayer: function (feature, latlng) {
-			var markerStyle = { 
-				fillColor: "#CC9900",
-				color: "#FFF",
-				fillOpacity: 0.5,
-				opacity: 0.8,
-				weight: 0.5,
-				radius: 1
-			};
-
-			return L.circleMarker(latlng, markerStyle);
-		},
+//		pointToLayer: function (feature, latlng) {
+//			var markerStyle = { 
+//				fillColor: "#CC9900",
+//				color: "#FFF",
+//				fillOpacity: 0.5,
+//				opacity: 0.8,
+//				weight: 0.5,
+//				radius: 1
+//			};
+//
+//			return L.circleMarker(latlng, markerStyle);
+//		},
 		onEachFeature: function (feature, layer) {
 			var html = "";
 			for (prop in feature.properties){
@@ -114,7 +114,7 @@ function submitQuery(){
 
 	//add to data request object
 	var data = {
-		table: "fracsandsites",
+		table: "ej_vill",
 		fields: fields
 	};
 	formdata.forEach(function(dataobj){
